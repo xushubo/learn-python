@@ -1,0 +1,10 @@
+print(ord('A'),ord('中'))#对于单个字符的编码，Python提供了ord()函数获取字符的整数表示，chr()函数把编码转换为对应的字符
+print(chr(65),chr(20013))
+print('ABC'.encode('ascii'))#以Unicode表示的str通过encode()方法可以编码为指定的bytes
+print('中文'.encode('UTF-8'))
+print(b'ABC'.decode('ascii'))#要注意区分'ABC'和b'ABC'，前者是str，后者虽然内容显示得和前者一样，但bytes的每个字符都只占用一个字节。
+print(b'\xe4\xb8\xad\xe6\x96\x87'.decode('UTF-8'))#把bytes变为str，就需要用decode()方法
+print(len('abc'))#要计算str包含多少个字符，可以用len()函数
+print(len('中文'))
+print(len(b'abc'))
+print(len(b'\xe4\xb8\xad\xe6\x96\x87'))#len()函数计算的是str的字符数，如果换成bytes，len()函数就计算字节数

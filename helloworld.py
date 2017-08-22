@@ -1,0 +1,6 @@
+print("hello, world")
+print("200+500=",200+500)
+name = input('please enter your name: ')
+print('hello,',name)
+print('hello,',name,sep='')
+print("1024*768=",1024*768)
