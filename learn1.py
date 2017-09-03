@@ -14,7 +14,7 @@ def gen():
 def subgen():
 	while True:
 		x = yield
-		yield x+1
+		yield x + 1
 def main():
 	g = gen()
 	next(g)                # 驱动生成器g开始执行到第一个 yield

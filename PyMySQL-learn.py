@@ -45,7 +45,8 @@ print(value_many)
 print(values)
 
 # 在fetch数据时按照顺序进行，可以使用cursor.scroll(num,mode)来移动游标位置 如：
-#cursor.scroll(-1, mode='relative') # 相对当前位置移动，数字1 也可以为负数，只是移动方向不同而已
+cursor.scroll(-1, mode='relative') # 相对当前位置移动，数字1 也可以为负数，只是移动方向不同而已
+print(cursor.fetchall())
 cursor.scroll(6,mode='absolute') # 相对绝对位置移动
 print(cursor.fetchall())
 
